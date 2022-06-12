@@ -3,7 +3,7 @@
 <img src='https://drive.google.com/uc?id=1yBBgQEMIzwOpw4qlz0H7H87iurAfW5v8'>
 
 
-- In this project I built A Dynamic web page with Javascript.
+* In this project I built A Dynamic web page with Javascript.
 
 Starter Code From [repository](https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page)
 
