@@ -68,17 +68,37 @@ const addActiveClass = () => {
 };
 
 
+
+
 /**
  * End Main Functions
  * Begin Events
  *
  */
 
+
+// Add smooth scrolling when navigation menu is clicked
+ const smoothScroll = () => {
+    document.querySelectorAll(".menu__link").forEach((anchor) => {
+        // selects all anchors with class='menu__link'
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(anchor.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+    });
+};
+
 // Build menu
 
 dynamicNavBar();
 
-// Set sections as active
+// Set sections as 
+
+
+// call smooth scroll
+smoothScroll()
 
 document.addEventListener("scroll", addActiveClass);
 
