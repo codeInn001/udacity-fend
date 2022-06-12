@@ -79,11 +79,11 @@ const addActiveClass = () => {
 
 // Add smooth scrolling when navigation menu is clicked
  const smoothScroll = () => {
-    document.querySelectorAll(".menu__link").forEach((anchor) => {
+    document.querySelectorAll(".menu__link").forEach((menuLink) => {
         // selects all anchors with class='menu__link'
-        anchor.addEventListener("click", function (e) {
+        menuLink.addEventListener("click", function (e) {
             e.preventDefault();
-            document.querySelector(anchor.getAttribute("href")).scrollIntoView({
+            document.querySelector(menuLink.getAttribute("href")).scrollIntoView({
                 behavior: "smooth",
             });
         });
